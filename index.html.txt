@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA KEJEMAATAN GBI SION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>DATA KEJEMAATAN GBI SION</h2>
+        <form id="jemaatForm">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" required>
+
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" required>
+
+            <label for="domisili">Domisili:</label>
+            <input type="text" id="domisili" required>
+
+            <label for="pekerjaan">Pekerjaan:</label>
+            <input type="text" id="pekerjaan" required>
+
+            <label for="status_menikah">Status Menikah:</label>
+            <select id="status_menikah" required>
+                <option value="Belum Menikah">Belum Menikah</option>
+                <option value="Menikah">Menikah</option>
+                <option value="Cerai">Cerai</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="nomor_hp">Nomor HP:</label>
+            <input type="tel" id="nomor_hp" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="persetujuan" required>
+                <label for="persetujuan">Saya menyetujui kebijakan pendataan jemaat GBI Sion</label>
+            </div>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

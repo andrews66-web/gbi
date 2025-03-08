@@ -1,0 +1,26 @@
+document.getElementById("jemaatForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let nama = document.getElementById("nama").value;
+    let alamat = document.getElementById("alamat").value;
+    let tanggal_lahir = document.getElementById("tanggal_lahir").value;
+    let domisili = document.getElementById("domisili").value;
+    let pekerjaan = document.getElementById("pekerjaan").value;
+    let status_menikah = document.getElementById("status_menikah").value;
+    let email = document.getElementById("email").value;
+    let nomor_hp = document.getElementById("nomor_hp").value;
+    
+    let message = `DATA KEJEMAATAN GBI SION:%0A
+    Nama: ${nama}%0A
+    Alamat: ${alamat}%0A
+    Tanggal Lahir: ${tanggal_lahir}%0A
+    Domisili: ${domisili}%0A
+    Pekerjaan: ${pekerjaan}%0A
+    Status Menikah: ${status_menikah}%0A
+    Email: ${email}%0A
+    Nomor HP: ${nomor_hp}`;
+
+    let whatsappURL = `https://wa.me/6281234567890?text=${message}`;
+
+    window.open(whatsappURL, "_blank");
+});
